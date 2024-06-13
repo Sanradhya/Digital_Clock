@@ -1,0 +1,39 @@
+/* style.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3a6186, #89253e);
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px 60px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.clock {
+    font-size: 6rem;
+    color: #ffffff;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    letter-spacing: 3px;
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+    to {
+        text-shadow: 0 0 20px #ffffff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff, 0 0 80px #ff00ff;
+    }
+}
